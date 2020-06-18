@@ -16,6 +16,9 @@ client.on("message", message => {
         case 'cpp':
             message.channel.send("¿Qué fue loco?¿Por qué eres un CPP?");
             break;
+        case 'pelado':
+            message.channel.send("¿Qué fue @Maki?");
+            break;
         case 'version':
             message.channel.send("Esta es la version 1.0.0, ojalá me mejoren UwU");
             break;
