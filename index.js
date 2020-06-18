@@ -27,8 +27,9 @@ client.on("message", message => {
             message.channel.send(`Es ${user}`);
             break;
         case 'clear':
-            if( !args[1] ) return message.reply('Ups! Necesitas decirme cuantos mensajes debo eliminar. ¡Lápiz!')
-            message.channel.bulkDelete(args[1]);
+            if( !args[1] ) return message.reply('Ups! Necesitas decirme cuantos mensajes debo eliminar. ¡Lápiz!');
+            var bulkDelete = parseInt(args[1])+1;
+            message.channel.bulkDelete(bulkDelete);
             break;
     }
 
