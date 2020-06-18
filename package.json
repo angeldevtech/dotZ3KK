@@ -1,0 +1,25 @@
+{
+  "name": "dotz3kk",
+  "version": "1.0.0",
+  "description": "It's a bot for a discord server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angeldevtech/dotZ3KK.git"
+  },
+  "keywords": [
+    "DiscordBot"
+  ],
+  "author": "dotGlass",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angeldevtech/dotZ3KK/issues"
+  },
+  "homepage": "https://github.com/angeldevtech/dotZ3KK#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  }
+}
