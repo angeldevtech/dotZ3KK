@@ -22,7 +22,8 @@ client.on("message", message => {
             }
             break;
         case 'pelado':
-            message.channel.send("¿Qué fue @Maki?");
+            const maki = client.users.cache.get('630468869365956608');
+            message.channel.send(`¿Qué fue ${user}?`);
             break;
         case 'info':
             if( args[1] === 'version' ){
