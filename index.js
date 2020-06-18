@@ -14,7 +14,12 @@ client.on("message", message => {
 
     switch(args[0]){
         case 'cpp':
-            message.channel.send("¿Qué fue loco?¿Por qué eres un CPP?");
+            if( args[1] != null ){
+                var userMention = message.mentions.users.first();
+                message.channel.send(`¿${userMention} qué fue loco?¿Por qué eres un CPP?`);
+            }else{
+                message.reply("¿ qué fue loco?¿Por qué eres un CPP?");
+            }
             break;
         case 'pelado':
             message.channel.send("¿Qué fue @Maki?");
