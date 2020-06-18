@@ -19,12 +19,16 @@ client.on("message", message => {
         case 'pelado':
             message.channel.send("¿Qué fue @Maki?");
             break;
-        case 'version':
-            message.channel.send("Esta es la version 1.0.0, ojalá me mejoren UwU");
-            break;
-        case 'author':
-            const user = client.users.cache.get('513487188759937025');
-            message.channel.send(`Es ${user}`);
+        case 'info':
+            if( args[1] === 'version' ){
+                message.channel.send("Esta es la version 1.0.0, ojalá me mejoren UwU");
+            } else
+            if( args[1] === 'autor' ){
+                const user = client.users.cache.get('513487188759937025');
+                message.channel.send(`Es ${user}`);
+            } else {
+                message.reply('Ups! Necesitas decirme que info deseas. ¡Lápiz!');
+            }
             break;
         case 'clear':
             if( !args[1] ) return message.reply('Ups! Necesitas decirme cuantos mensajes debo eliminar. ¡Lápiz!');
