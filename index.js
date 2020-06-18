@@ -25,6 +25,10 @@ client.on("message", message => {
         case 'author':
             message.channel.send("@dotGlass");
             break;
+        case 'clear':
+            if( !args[1] ) return message.reply('Ups! Necesitas decirme cuantos mensajes debo eliminar. ¡Lápiz!')
+            message.channel.bulkDelete(args[1]);
+            break;
     }
 
 });
