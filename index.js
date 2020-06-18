@@ -23,11 +23,12 @@ client.on("message", message => {
             message.channel.send("Esta es la version 1.0.0, ojalá me mejoren UwU");
             break;
         case 'author':
-            message.channel.send("@dotGlass");
+            const user = client.users.cache.get('513487188759937025');
+            message.channel.send(`Es ${user}`);
             break;
         case 'clear':
             if( !args[1] ) return message.reply('Ups! Necesitas decirme cuantos mensajes debo eliminar. ¡Lápiz!')
-            message.channel.bulkDelete(args[1]);
+            message.channel.bulkDelete(args[1]+1);
             break;
     }
 
