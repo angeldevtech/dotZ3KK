@@ -44,6 +44,9 @@ client.on("message", message => {
             var bulkDelete = parseInt(args[1])+1;
             message.channel.bulkDelete(bulkDelete);
             break;
+        case 'Tongo':
+            message.channel.send("Le Tonge! \n https://tobienlatele.files.wordpress.com/2017/02/img_4365.png");
+            break;
     }
 
 });
