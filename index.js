@@ -11,6 +11,7 @@ client.once('ready', () => {
 client.on("message", message => {
 
     let args = message.content.substring(PREFIX.length).split(" ");
+    const maki = client.users.cache.get('630468869365956608');
 
     switch(args[0]){
         case 'cpp':
@@ -22,8 +23,10 @@ client.on("message", message => {
             }
             break;
         case 'pelado':
-            const maki = client.users.cache.get('630468869365956608');
             message.channel.send(`¿Qué fue ${maki}?`);
+            break;
+        case 'mariano':
+            message.channel.send(`${maki} el come-platanos salvaje`);
             break;
         case 'info':
             if( args[1] === 'version' ){
