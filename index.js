@@ -17,6 +17,13 @@ client.on("message", message => {
 
     const maki = client.users.cache.get('630468869365956608');
 
+    const zimages = [
+        "https://i.imgur.com/Dczwgqf.png",
+        "https://i.imgur.com/3Kyzog2.png",
+        "https://i.imgur.com/nKMeKhR.png",
+        "https://i.imgur.com/NQtQibx.png",
+        "https://i.imgur.com/XRowHgc.png"];
+
     switch(command){
         case 'cpp':
             if( args[0] != null ){
@@ -31,6 +38,10 @@ client.on("message", message => {
             break;
         case 'mariano':
             message.channel.send(`${maki} el come-platanos salvaje \n https://i.imgur.com/QAZPHRY.png`);
+            break;
+        case 'zzz':
+            var c = Math.round(Math.random()*zimages.length);
+            message.channel.send('zZz zZz \n '+ zimages[c]);
             break;
         case 'info':
             if( args[0] === 'version' ){
