@@ -10,12 +10,16 @@ client.once('ready', () => {
 
 client.on("message", message => {
 
-    let args = message.content.substring(PREFIX.length).split(" ");
+    if (!message.content.startsWith(prefix) || message.author.bot) return;
+
+    const args = message.content.slice(PREFIX.length).split(/ +/);
+    const command = args.shift().toLowerCase();
+
     const maki = client.users.cache.get('630468869365956608');
 
-    switch(args[0]){
+    switch(command){
         case 'cpp':
-            if( args[1] != null ){
+            if( args[0] != null ){
                 var userMention = message.mentions.users.first();
                 message.channel.send(`¿${userMention} qué fue loco?¿Por qué eres un CPP?`);
             }else{
@@ -29,10 +33,10 @@ client.on("message", message => {
             message.channel.send(`${maki} el come-platanos salvaje \n https://i.imgur.com/QAZPHRY.png`);
             break;
         case 'info':
-            if( args[1] === 'version' ){
+            if( args[0] === 'version' ){
                 message.channel.send("Esta es la version 1.0.0, ojalá me mejoren UwU");
             } else
-            if( args[1] === 'autor' ){
+            if( args[0] === 'autor' ){
                 const user = client.users.cache.get('513487188759937025');
                 message.channel.send(`Es ${user}`);
             } else {
@@ -40,8 +44,8 @@ client.on("message", message => {
             }
             break;
         case 'clearm':
-            if( !args[1] ) return message.reply('Ups! Necesitas decirme cuantos mensajes debo eliminar. ¡No seas Lápiz!');
-            var bulkDelete = parseInt(args[1])+1;
+            if( !args[0] ) return message.reply('Ups! Necesitas decirme cuantos mensajes debo eliminar. ¡No seas Lápiz!');
+            var bulkDelete = parseInt(args[0])+1;
             message.channel.bulkDelete(bulkDelete);
             break;
         case 'Tongo':
