@@ -41,7 +41,7 @@ client.on("message", message => {
             break;
         case 'zzz':
             var c = Math.round(Math.random()*zimages.length);
-            message.channel.send('zZz zZz \n '+ zimages[c]);
+            message.channel.send('zZz zZz \n'+ zimages[c]);
             break;
         case 'info':
             if( args[0] === 'version' ){
