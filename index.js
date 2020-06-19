@@ -26,7 +26,7 @@ client.on("message", message => {
             message.channel.send(`¿Qué fue ${maki}?`);
             break;
         case 'mariano':
-            message.channel.send(`${maki} el come-platanos salvaje \n https://drive.google.com/file/d/1i8BUX8F7gSZ30ayl5BFtb_NmGSbL1yae/view?usp=sharing`);
+            message.channel.send(`${maki} el come-platanos salvaje \n https://i.imgur.com/QAZPHRY.png`);
             break;
         case 'info':
             if( args[1] === 'version' ){
