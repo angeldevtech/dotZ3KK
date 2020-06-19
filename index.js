@@ -40,7 +40,7 @@ client.on("message", message => {
             message.channel.send(`${maki} el come-platanos salvaje \n https://i.imgur.com/QAZPHRY.png`);
             break;
         case 'zzz':
-            var c = Math.round(Math.random()*zimages.length);
+            var c = Math.floor(Math.random()*zimages.length);
             message.channel.send('zZz zZz \n'+ zimages[c]);
             break;
         case 'info':
