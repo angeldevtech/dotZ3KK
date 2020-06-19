@@ -33,11 +33,11 @@ client.on("message", message => {
                 const user = client.users.cache.get('513487188759937025');
                 message.channel.send(`Es ${user}`);
             } else {
-                message.reply('Ups! Necesitas decirme que info deseas. ¡Lápiz!');
+                message.reply('Ups! Necesitas decirme que info deseas. ¡No seas Lápiz!');
             }
             break;
-        case 'clear':
-            if( !args[1] ) return message.reply('Ups! Necesitas decirme cuantos mensajes debo eliminar. ¡Lápiz!');
+        case 'clearm':
+            if( !args[1] ) return message.reply('Ups! Necesitas decirme cuantos mensajes debo eliminar. ¡No seas Lápiz!');
             var bulkDelete = parseInt(args[1])+1;
             message.channel.bulkDelete(bulkDelete);
             break;
