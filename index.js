@@ -61,15 +61,12 @@ client.on("message", message => {
             break;
         case 'tongo':
             message.channel.send("Le Tonge! \n https://tobienlatele.files.wordpress.com/2017/02/img_4365.png");
-            console.log('tongo');
             break;
-        case 'fzazo':
+        case 'fsszazo':
             if( args[0] != null ){
                 message.channel.send("F por "+args[0]+"\n https://k62.kn3.net/taringa/E/6/8/D/6/7/FernandoTedesco/550x366_AC6.jpg");
-                console.log('Fzazo 2');
             }else{
                 message.channel.send("https://k62.kn3.net/taringa/E/6/8/D/6/7/FernandoTedesco/550x366_AC6.jpg");
-                console.log('Fzazo 1');
             }
             break;
             
