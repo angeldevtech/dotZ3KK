@@ -30,7 +30,7 @@ client.on("message", message => {
                 var userMention = message.mentions.users.first();
                 message.channel.send(`¿${userMention} qué fue loco?¿Por qué eres un CPP?`);
             }else{
-                message.reply("¿ qué fue loco?¿Por qué eres un CPP?");
+                message.reply("¿Qué fue loco?¿Por qué eres un CPP?");
             }
             break;
         case 'pelado':
@@ -62,6 +62,14 @@ client.on("message", message => {
         case 'Tongo':
             message.channel.send("Le Tonge! \n https://tobienlatele.files.wordpress.com/2017/02/img_4365.png");
             break;
+        case 'Fzazo':
+            if( args[0] != null ){
+                message.channel.send("F por "+args[0]+"\n https://k62.kn3.net/taringa/E/6/8/D/6/7/FernandoTedesco/550x366_AC6.jpg");
+            }else{
+                message.channel.send("https://k62.kn3.net/taringa/E/6/8/D/6/7/FernandoTedesco/550x366_AC6.jpg");
+            }
+            break;
+            
     }
 
 });
