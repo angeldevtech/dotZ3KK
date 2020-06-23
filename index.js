@@ -59,11 +59,11 @@ client.on("message", message => {
             var bulkDelete = parseInt(args[0])+1;
             message.channel.bulkDelete(bulkDelete);
             break;
-        case 'Tongo':
+        case 'tongo':
             message.channel.send("Le Tonge! \n https://tobienlatele.files.wordpress.com/2017/02/img_4365.png");
             console.log('tongo');
             break;
-        case 'Fzazo':
+        case 'fzazo':
             if( args[0] != null ){
                 message.channel.send("F por "+args[0]+"\n https://k62.kn3.net/taringa/E/6/8/D/6/7/FernandoTedesco/550x366_AC6.jpg");
                 console.log('Fzazo 2');
