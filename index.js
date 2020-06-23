@@ -65,7 +65,7 @@ client.on("message", message => {
         case 'comediante':
             message.channel.send("Uy! Un comediante \n https://i.imgur.com/8k37Zt9.jpg");
             break;
-        case 'fsszazo':
+        case 'fzazo':
             if( args[0] != null ){
                 message.channel.send("F por "+args[0]+"\n https://k62.kn3.net/taringa/E/6/8/D/6/7/FernandoTedesco/550x366_AC6.jpg");
             }else{
