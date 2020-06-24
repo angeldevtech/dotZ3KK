@@ -62,6 +62,9 @@ client.on("message", message => {
         case 'tongo':
             message.channel.send("Le Tonge! \n https://tobienlatele.files.wordpress.com/2017/02/img_4365.png");
             break;
+        case 'avengers':
+            message.channel.send("https://i.imgur.com/1fYWHwv.gif");
+            break;
         case 'comediante':
             message.channel.send("Uy! Un comediante \n https://i.imgur.com/8k37Zt9.jpg");
             break;
