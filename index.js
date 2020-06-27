@@ -68,7 +68,11 @@ client.on("message", message => {
             break;
         case 'volando':
             var v = Math.floor(Math.random()*volandoImages.length);
-            message.channel.send(volandoImages[v]);
+            if( args[0] != null ){
+                message.channel.send("¡Mi causa "+args[0]+" esta volando! \n"+volandoImages[v]);
+            }else{
+                message.channel.send(volandoImages[v]);
+            }
             break;
         case 'avengers':
             message.channel.send("https://i.imgur.com/1fYWHwv.gif");
