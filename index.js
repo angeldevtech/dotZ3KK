@@ -23,6 +23,10 @@ client.on("message", message => {
         "https://i.imgur.com/nKMeKhR.png",
         "https://i.imgur.com/NQtQibx.png",
         "https://i.imgur.com/XRowHgc.png"];
+    const volandoImages = [
+        "https://media.giphy.com/media/msriR5ybSpQgo/giphy.gif",
+        "https://media.giphy.com/media/1L5YuA6wpKkNO/giphy.gif",
+        "https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif"];
 
     switch(command){
         case 'cpp':
@@ -61,6 +65,10 @@ client.on("message", message => {
             break;
         case 'tongo':
             message.channel.send("Le Tonge! \n https://tobienlatele.files.wordpress.com/2017/02/img_4365.png");
+            break;
+        case 'volando':
+            var v = Math.floor(Math.random()*volandoImages.length);
+            message.channel.send(volandoImages[v]);
             break;
         case 'avengers':
             message.channel.send("https://i.imgur.com/1fYWHwv.gif");
