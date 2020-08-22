@@ -41,7 +41,7 @@ client.on("message", message => {
             message.channel.reply(`Nos invita a ver BingoHot \n test`);
             break;
         case 'pelado':
-            message.channel.send(`¿Qué fue ${maki}?`);
+            message.channel.send(`¿Qué fuentes ${maki}?`);
             break;
         case 'mariano':
             message.channel.send(`${maki} el come-platanos salvaje \n https://i.imgur.com/QAZPHRY.png`);
