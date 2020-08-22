@@ -37,14 +37,14 @@ client.on("message", message => {
                 message.reply("¿Qué fue loco?¿Por qué eres un CPP?");
             }
             break;
+        case 'bingo':
+            message.channel.reply(`Nos invita a ver BingoHot \n https://pbs.twimg.com/media/Efpgv02XoAIxUTH.jpg`);
+            break;
         case 'pelado':
             message.channel.send(`¿Qué fue ${maki}?`);
             break;
         case 'mariano':
             message.channel.send(`${maki} el come-platanos salvaje \n https://i.imgur.com/QAZPHRY.png`);
-            break;
-        case 'bingo':
-            message.channel.reply(`Nos invita a ver BingoHot \n https://pbs.twimg.com/media/Efpgv02XoAIxUTH.jpg`);
             break;
         case 'zzz':
             var c = Math.floor(Math.random()*zimages.length);
