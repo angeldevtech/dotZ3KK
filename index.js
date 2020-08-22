@@ -38,7 +38,7 @@ client.on("message", message => {
             }
             break;
         case 'bingo':
-            message.channel.reply(`Nos invita a ver BingoHot \n test`);
+            message.reply(`Nos invita a ver BingoHot \n https://pbs.twimg.com/media/Efpgv02XoAIxUTH.jpg`);
             break;
         case 'pelado':
             message.channel.send(`¿Qué fuentes ${maki}?`);
