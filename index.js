@@ -43,6 +43,9 @@ client.on("message", message => {
         case 'mariano':
             message.channel.send(`${maki} el come-platanos salvaje \n https://i.imgur.com/QAZPHRY.png`);
             break;
+        case 'bingo':
+            message.channel.reply(`Nos invita a ver BingoHot \n https://pbs.twimg.com/media/Efpgv02XoAIxUTH.jpg`);
+            break;
         case 'zzz':
             var c = Math.floor(Math.random()*zimages.length);
             message.channel.send('zZz zZz \n'+ zimages[c]);
@@ -69,7 +72,7 @@ client.on("message", message => {
         case 'volando':
             var v = Math.floor(Math.random()*volandoImages.length);
             if( args[0] != null ){
-                message.channel.send("¡Mi causa "+args[0]+" esta volando! \n"+volandoImages[v]);
+                message.channel.send("¡Mi causa "+args[0]+" está volando! \n"+volandoImages[v]);
             }else{
                 message.channel.send(volandoImages[v]);
             }
