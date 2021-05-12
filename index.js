@@ -80,6 +80,9 @@ client.on("message", message => {
         case 'avengers':
             message.channel.send("https://i.imgur.com/1fYWHwv.gif");
             break;
+        case '420':
+            message.channel.send("https://hips.hearstapps.com/esq.h-cdn.co/assets/cm/15/06/54d415b549709_-_weed3.gif");
+            break;
         case 'comediante':
             message.channel.send("Uy! Un comediante \n https://i.imgur.com/8k37Zt9.jpg");
             break;
