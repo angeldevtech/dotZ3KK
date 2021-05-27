@@ -22,6 +22,7 @@ client.on("message", message => {
         "https://i.imgur.com/3Kyzog2.png",
         "https://i.imgur.com/nKMeKhR.png",
         "https://i.imgur.com/NQtQibx.png",
+        "https://i.imgur.com/ey8fcNe.jpg",
         "https://i.imgur.com/XRowHgc.png"];
     const volandoImages = [
         "https://media.giphy.com/media/msriR5ybSpQgo/giphy.gif",
@@ -41,10 +42,16 @@ client.on("message", message => {
             message.reply(`Nos invita a ver BingoHot \n https://pbs.twimg.com/media/Efpgv02XoAIxUTH.jpg`);
             break;
         case 'pelado':
-            message.channel.send(`¿Qué fuentes ${maki}?`);
+            message.channel.send(`¿Qué fuentes pelado?`);
             break;
         case 'mariano':
-            message.channel.send(`${maki} el come-platanos salvaje \n https://i.imgur.com/QAZPHRY.png`);
+            message.channel.send(`el come-platanos salvaje \n https://i.imgur.com/QAZPHRY.png`);
+            break;
+        case 'mariana':
+            message.channel.send(`https://i.imgur.com/duEEVjD.jpg`);
+            break;
+        case '._.':
+            message.channel.send(`https://i.imgur.com/GVXb4QM.jpg`);
             break;
         case 'zzz':
             var c = Math.floor(Math.random()*zimages.length);
