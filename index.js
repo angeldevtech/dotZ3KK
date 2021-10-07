@@ -1,4 +1,3 @@
-/*
 const Discord = require('discord.js');
 const {AudioManager} = require('discordaudio');
 
@@ -14,7 +13,7 @@ client.once('ready', () => {
     console.log('dotZ3KK is online!');
 });
 
-client.on("message", message => {
+client.on("messageCreate", message => {
 
     if (!message.content.startsWith(PREFIX)) return;
 
@@ -162,7 +161,7 @@ client.on("message", message => {
 });
 
 client.login(process.env.token);
-*/
+/*
 import { AudioManager } from 'discordaudio';
 import { Client, Intents, MessageEmbed } from 'discord.js';
 
@@ -243,3 +242,4 @@ client.on('messageCreate', message => {
 });
 
 client.login(process.env.token);
+*/
