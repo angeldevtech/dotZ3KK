@@ -34,6 +34,8 @@ client.on("message", message => {
         "https://media.giphy.com/media/1L5YuA6wpKkNO/giphy.gif",
         "https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif"];
 
+    const vc = connections.get(message.guild.me.voice.channel?.id);
+
     switch(command){
         case 'play':
             if(!message.member.voice.channel && !message.guild.me.voice.channel) return message.channel.send({content: `Please join a voice channel in order to play a song!`});
