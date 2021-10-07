@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/angeldevtech/dotZ3KK#readme",
   "dependencies": {
-    "discord.js": "^12.2.0"
+    "discord.js": "^13.2.0",
+    "discordaudio": "^2.1.0"
   }
 }
