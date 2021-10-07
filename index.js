@@ -237,6 +237,8 @@ client.on('messageCreate', message => {
             if(Number(args[1] < 1 || Number(args[1]) > 10)) return message.channel.send({content: `Please provide a volume between 1-10`});
             audioManager.volume(vc, Number(args[1]));
             break;
+        case 'tryme':
+            message.channel.send(`working`)
     }
 });
 
