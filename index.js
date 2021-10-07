@@ -114,7 +114,7 @@ client.on("messageCreate", message => {
             break;
         case 'info':
             if( args[0] === 'version' ){
-                message.channel.send("Esta es la version 1.0.0, ojalá me mejoren UwU");
+                message.channel.send("Esta es la version 1.0.1, NiceTry");
             } else
             if( args[0] === 'autor' ){
                 const user = client.users.cache.get('513487188759937025');
