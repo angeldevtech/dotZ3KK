@@ -1,7 +1,7 @@
-const Discord = require('discord.js');
-const {AudioManager} = require('discordaudio');
+import { Client } from 'discord.js';
+import { AudioManager } from 'discordaudio';
 
-const client = new Discord.Client({intents: [discord.Intents.FLAGS.GUILDS, discord.Intents.FLAGS.GUILD_MESSAGES, discord.Intents.FLAGS.GUILD_VOICE_STATES]});
+const client = new Client({intents: [discord.Intents.FLAGS.GUILDS, discord.Intents.FLAGS.GUILD_MESSAGES, discord.Intents.FLAGS.GUILD_VOICE_STATES]});
 
 const PREFIX = '!';
 
