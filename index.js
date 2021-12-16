@@ -106,7 +106,7 @@ client.on("messageCreate", message => {
             message.channel.send("https://textoverimage.moesif.com/image?image_url=https%3A%2F%2Fi.imgur.com%2FZdiRBOg.png&text="+textThen+"&_size=128&y_align=bottom&x_align=center");
             break;
         case 'win':
-            const textThen = message.content.slice(5);
+            const textWin = message.content.slice(5);
             message.channel.send("https://textoverimage.moesif.com/image?image_url=https%3A%2F%2Fi.imgur.com%2F1uDLov0.png&text="+textThen+"&_size=128&y_align=bottom&x_align=center");
             break;
     }
