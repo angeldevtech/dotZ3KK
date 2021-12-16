@@ -1,14 +1,15 @@
 const Discord = require('discord.js');
 
-const client = new Discord.Client();
+const client = new Discord.Client({intents: [discord.Intents.FLAGS.GUILDS, discord.Intents.FLAGS.GUILD_MESSAGES, discord.Intents.FLAGS.GUILD_VOICE_STATES]});
 
 const PREFIX = '!';
+
 
 client.once('ready', () => {
     console.log('dotZ3KK is online!');
 });
 
-client.on("message", message => {
+client.on("messageCreate", message => {
 
     if (!message.content.startsWith(PREFIX)) return;
 
@@ -28,6 +29,8 @@ client.on("message", message => {
         "https://media.giphy.com/media/msriR5ybSpQgo/giphy.gif",
         "https://media.giphy.com/media/1L5YuA6wpKkNO/giphy.gif",
         "https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif"];
+
+    const vc = connections.get(message.guild.me.voice.channel?.id);
 
     switch(command){
         case 'cpp':
@@ -59,7 +62,7 @@ client.on("message", message => {
             break;
         case 'info':
             if( args[0] === 'version' ){
-                message.channel.send("Esta es la version 1.0.0, ojalá me mejoren UwU");
+                message.channel.send("Esta es la version 1.0.1, NiceTry");
             } else
             if( args[0] === 'autor' ){
                 const user = client.users.cache.get('513487188759937025');
@@ -101,11 +104,11 @@ client.on("message", message => {
             }
             break;
         case 'then':
-                const textThen = message.content.slice(6);
-                message.channel.send("https://textoverimage.moesif.com/image?image_url=https%3A%2F%2Fi.imgur.com%2FZdiRBOg.png&text=text&"+textThen+"_size=128&y_align=bottom&x_align=center")
-                break;
-    }
+            const textThen = message.content.slice(6);
+            message.channel.send("https://textoverimage.moesif.com/image?image_url=https%3A%2F%2Fi.imgur.com%2FZdiRBOg.png&text=text&"+textThen+"_size=128&y_align=bottom&x_align=center")
+            break;
 
+        }
 });
 
 client.login(process.env.token);
