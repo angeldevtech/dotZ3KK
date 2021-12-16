@@ -100,7 +100,10 @@ client.on("message", message => {
                 message.channel.send("https://k62.kn3.net/taringa/E/6/8/D/6/7/FernandoTedesco/550x366_AC6.jpg");
             }
             break;
-            
+        case 'then':
+                const textThen = message.content.slice(6);
+                message.channel.send("https://textoverimage.moesif.com/image?image_url=https%3A%2F%2Fi.imgur.com%2FZdiRBOg.png&text=text&"+textThen+"_size=128&y_align=bottom&x_align=center")
+                break;
     }
 
 });
