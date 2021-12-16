@@ -30,8 +30,6 @@ client.on("messageCreate", message => {
         "https://media.giphy.com/media/1L5YuA6wpKkNO/giphy.gif",
         "https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif"];
 
-    const vc = connections.get(message.guild.me.voice.channel?.id);
-
     switch(command){
         case 'cpp':
             if( args[0] != null ){
