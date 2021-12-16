@@ -103,9 +103,13 @@ client.on("messageCreate", message => {
             break;
         case 'then':
             const textThen = message.content.slice(6);
-            message.channel.send("https://textoverimage.moesif.com/image?image_url=https%3A%2F%2Fi.imgur.com%2FZdiRBOg.png&text="+textThen+"&_size=128&y_align=bottom&x_align=center")
+            message.channel.send("https://textoverimage.moesif.com/image?image_url=https%3A%2F%2Fi.imgur.com%2FZdiRBOg.png&text="+textThen+"&_size=128&y_align=bottom&x_align=center");
             break;
-        }
+        case 'win':
+            const textThen = message.content.slice(6);
+            message.channel.send("https://textoverimage.moesif.com/image?image_url=https%3A%2F%2Fi.imgur.com%2F1uDLov0.png&text="+textThen+"&_size=128&y_align=bottom&x_align=center");
+            break;
+    }
 });
 
 client.login(process.env.token);
