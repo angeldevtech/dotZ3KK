@@ -2,6 +2,9 @@
   "name": "dotz3kk",
   "version": "1.0.0",
   "description": "It's a bot for a discord server",
+  "engines": {
+    "node": "16.x"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
