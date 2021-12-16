@@ -1,13 +1,9 @@
 const Discord = require('discord.js');
-const {AudioManager} = require('discordaudio');
 
 const client = new Discord.Client({intents: [discord.Intents.FLAGS.GUILDS, discord.Intents.FLAGS.GUILD_MESSAGES, discord.Intents.FLAGS.GUILD_VOICE_STATES]});
 
 const PREFIX = '!';
 
-const connections = new Map();
-
-const audioManager = new AudioManager();
 
 client.once('ready', () => {
     console.log('dotZ3KK is online!');
