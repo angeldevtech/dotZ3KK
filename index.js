@@ -109,6 +109,14 @@ client.on("messageCreate", message => {
             const textWin = message.content.slice(5);
             message.channel.send("https://textoverimage.moesif.com/image?image_url=https%3A%2F%2Fi.imgur.com%2F1uDLov0.png&text="+textWin+"&_size=128&y_align=bottom&x_align=center");
             break;
+        case 'ng':
+            const textNg = message.content.slice(4);
+            message.channel.send("https://textoverimage.moesif.com/image?image_url=https%3A%2F%2Fi.imgur.com%2Fm96E6Ex.png&text="+textNg+"&_size=128&y_align=bottom&x_align=center");
+            break;
+        case 'news':
+            const textNews = message.content.slice(6);
+            message.channel.send("https://textoverimage.moesif.com/image?image_url=https%3A%2F%2Fi.imgur.com%2FOUYRKcs.png&text="+textNews+"&_size=128&y_align=bottom&x_align=center");
+            break;
     }
 });
 
